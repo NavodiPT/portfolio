@@ -1,0 +1,184 @@
+/* General Styles */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #1d1a18, #4a6572, #c89116);
+  background-size: 300% 300%;
+  animation: gradient-animation 8s ease infinite;
+  color: #ffffff;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.home-content {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+/* Left Side (Text Section) */
+.left-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.animated-container {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.typing-effect {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ededf1, #000401, #e0b937, #faefea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 5s steps(30, end) forwards;
+  margin-bottom: 20px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.education-text {
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: bold; 
+  font-size: 2.5rem; 
+  color: #dfcfc4; 
+  line-height: 1.5; 
+  margin-top: 20px;
+  text-transform: uppercase; 
+}
+
+.education-text .subtext {
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 500; 
+  font-size: 1.2rem; 
+  color: #bcd2dd; 
+  text-transform: none; 
+  /* font-style: italic; */
+  margin-top: 10px; 
+  letter-spacing: 0.5px; 
+}
+
+
+/* Button Style */
+.get-started-button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background: #4a6572;
+  border: 2px solid #c89116;
+  border-radius: 50px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  outline: none;
+  margin-top: 20px;
+}
+
+.get-started-button:hover {
+  background: white;
+  color: #c89116;
+  border: 2px solid #c89116;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Side (Profile Image Section) */
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image-container {
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-image-container:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-side {
+    align-items: center;
+    text-align: center;
+  }
+
+  .typing-effect {
+    font-size: 2rem;
+  }
+
+  .education-text {
+    font-size: 1.5rem;
+  }
+
+  .education-text .subtext{
+    font-size: 1rem;
+  }
+
+  .profile-image-container {
+    max-width: 250px;
+  }
+
+  .get-started-button {
+    font-size: 1rem; 
+    padding: 12px 25px; 
+    width: 50%; 
+    max-width: 300px; 
+    
+  }
+}

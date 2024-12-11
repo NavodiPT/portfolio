@@ -1,0 +1,92 @@
+/* Contact Us Container */
+.contact-us-container {
+    background: linear-gradient(135deg, #1d1a18, #c89116, #000000);
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Contact Information */
+  .contact-info {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info p {
+    margin: 10px 0;
+  }
+  
+  .contact-info a {
+    color: #faefea;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    color: #c89116;
+  }
+  
+  /* Form Styles */
+  .contact-form {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Form Labels */
+  .contact-form label {
+    font-weight: bold;
+    color: #faefea;
+  }
+  
+  /* Form Control (Input, Select, Textarea) */
+  .contact-form .form-control,
+  .contact-form .form-select {
+    background-color: #f3f3f3;
+    border: 2px solid #c89116;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-form .form-control:focus,
+  .contact-form .form-select:focus {
+    border-color: #c89116;
+    box-shadow: 0 0 10px rgba(200, 145, 22, 0.5);
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    background-color: #c89116;
+    border: none;
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .submit-button:hover {
+    background-color: #faefea;
+    color: #000000;
+    transform: scale(1.05);
+  }
+  
+  /* Checkbox */
+  .contact-form .form-check-input:checked {
+    background-color: #c89116;
+    border-color: #c89116;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-us-container {
+      padding: 20px;
+    }
+    
+    .submit-button {
+      width: 100%;
+    }
+  }
+  

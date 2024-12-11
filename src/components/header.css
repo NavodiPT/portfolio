@@ -1,0 +1,71 @@
+
+.navbar-custom {
+  background: linear-gradient(135deg, #1d1a18, #c89116, #50799c);
+  background-size: 500% 500%;
+  animation: gradient-bg 10s ease infinite;
+  padding: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.navbar-custom .nav-link {
+  color: #ffffff !important;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+.navbar-custom .nav-link:hover {
+  color: #faefea !important; 
+  transform: scale(1.1);
+}
+
+
+.navbar-custom .navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #ffffff !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .navbar-brand:hover {
+  color: #faefea !important;
+}
+
+@keyframes gradient-bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-custom {
+    padding: 0.5rem;
+  }
+
+  .navbar-custom .nav-link {
+    font-size: 1rem; /* Smaller font size for smaller screens */
+    padding: 0.5rem;
+  }
+
+  .navbar-custom .navbar-brand {
+    font-size: 1.5rem; /* Smaller branding font size */
+  }
+}

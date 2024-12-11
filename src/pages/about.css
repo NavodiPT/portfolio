@@ -1,0 +1,158 @@
+.about-container {
+  padding: 40px;
+  background-color: #f7f4f1;
+  color: #1d1a18;
+  min-height: 100vh;
+}
+
+.about-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #c89116;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.custom-accordion .accordion-item {
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-accordion .accordion-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: #c89116;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.custom-accordion .accordion-body {
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #1d1a18;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: #e0b937;
+}
+
+a {
+  color: #c89116;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.blockquote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #7a7a7a;
+}
+
+.download-cv {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.download-cv .btn-warning {
+  background-color: #c89116;
+  border: none;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.download-cv .btn-warning:hover {
+  background-color: #e0b937;
+  color: #fff;
+}
+
+.skills-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.skills-category {
+  margin-bottom: 30px;
+}
+
+.skills-category-title {
+  font-weight: bold;
+  color: #c89116;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 2rem;
+}
+
+.tech-icon {
+  color: #1d1a18;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.tech-icon:hover {
+  transform: scale(1.2);
+  color: #c89116;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+h1, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.accordion-item {
+  border: none;
+  border-radius: 10px;
+  background-color: #f7f4f1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button {
+  background-color: #f1efedf5;
+  color: #c89116;
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e0b937;
+  color: #000;
+}
+
+.accordion-body {
+  background-color: #fff;
+  padding: 20px;
+  color: #1d1a18;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+h1.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #c89116;
+  margin-bottom: 30px;
+}
